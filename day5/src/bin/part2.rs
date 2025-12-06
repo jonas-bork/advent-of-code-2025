@@ -28,18 +28,6 @@ fn part2(input: &str) -> usize {
     total
 }
 
-fn merge_ranges(ranges: Vec<(usize, usize)>) -> Vec<(usize, usize)> {
-    let new_ranges: Vec<(usize, usize)> = vec![];
-
-    for (i, range) in ranges.iter().enumerate() {
-        for (j, other_range) in ranges[i + 1..].iter().enumerate() {
-            todo!()
-        }
-    }
-
-    new_ranges
-}
-
 fn ids_in_range(range: (usize, usize)) -> usize {
     range.1 - range.0 + 1
 }
